@@ -1,55 +1,27 @@
 # Juno PM
 
-> _(one-line pitch: what Juno does, for whom, in one sentence)_
+Juno turns scattered, authorized product signals into a private insight brief so a PM can trace the evidence and choose the next validation step.
 
-_Your name · cohort · date_
+Xiaodan Zhu · AI Product Management · November 3–19, 2026 cohort
 
-This repo is my final project for the **AI Product Management Certification**. Each module's artifact lives in its own folder.
+## Project scope
 
-**How to use this template:** click **Use this template → Create a new repository**, name it `juno-pm`, and commit one module's artifact per session. In Module 6, the **Final Project Deliverables Builder** reads these files and turns them into your final presentation.
-
----
+This is a mock product project for the AI Product Management Certification, set in the fictional RocketShip scenario. The hosted prototype uses synthetic notes. The skill file, AI PRD, agent control panel and human rubric specify how the same insight-synthesis capability should behave. They do not claim a production deployment or measured business results. The PM owns priorities, commitments and external communication.
 
 ## Module artifacts
 
-### M1 · Prompting
-- **Skill file**, [`01-prompting/skill-file.md`](01-prompting/skill-file.md)
+- [M1 Skill file](01-prompting/skill-file.md)
+- [M2 Prototype and debrief](02-prototype/prototype.md), with the [hosted prototype](https://willzxd.github.io/juno-pm/02-prototype/)
+- [M3 AI PRD](03-harness-prd/prd.md)
+- [M4 Agent control panel](04-agentic-workflows/agent-control-panel.md)
+- [M5 Human evaluation rubric](05-evals/human-rubric.md)
 
-### M2 · Prototype
-- **Prototype**, [`02-prototype/prototype.md`](02-prototype/prototype.md). Link, what it demonstrates, and debrief.
+## Evaluation and metrics
 
-### M3 · Harness / AI PRD
-- **AI PRD**, [`03-harness-prd/prd.md`](03-harness-prd/prd.md)
+The rubric's reviewers, sampling cadence and pass thresholds describe a proposed process. Course or synthetic packets may illustrate the checks, with any scores labeled as mock evaluations. Module 2's separate Show and Swap classroom exercise calls for a partner cold read; its debrief clearly identifies the feedback actually recorded.
 
-### M4 · Deploy Agentic Systems and Workflows
-- **Agent Control Panel**, [`04-agentic-workflows/agent-control-panel.md`](04-agentic-workflows/agent-control-panel.md). The lab, in class.
+The Module 6 metrics plan and presentation remain in draft for Xiaodan's review. The manual-time baseline is Xiaodan's estimate of 120 minutes per brief. The required target is at least 50% less time, or no more than 60 minutes using that baseline. This is a target, not an achieved result.
 
-### M5 · Evals & Guardrails
-- **Human eval rubric**, [`05-evals/human-rubric.md`](05-evals/human-rubric.md). The lab, in class.
+## Final submission
 
-### M6 · Prove AI Impact with Ongoing Metrics
-- **Final presentation**, [`final-presentation.html`](final-presentation.html). Built in the **Final Project Deliverables Builder** from the files above, then committed here. Submit this repo's URL and the presentation (its GitHub Pages link or the file) on the Learning Platform.
-
----
-
-## Repo structure
-
-```
-juno-pm/
-├── README.md                          ← this overview
-├── final-presentation.html            ← M6: final presentation, from the builder
-├── 01-prompting/
-│   └── skill-file.md                  ← M1: Juno's skill file (Role/Task/Constraints/Format)
-├── 02-prototype/
-│   └── prototype.md                   ← M2: prototype link + debrief
-├── 03-harness-prd/
-│   └── prd.md                         ← M3: AI PRD specifying all six harness surfaces
-├── 04-agentic-workflows/
-│   └── agent-control-panel.md         ← M4: Agent Control Panel
-└── 05-evals/
-    └── human-rubric.md                ← M5 lab: human eval rubric
-```
-
----
-
-_Certification submission, AI Product Management Certification._
+After Xiaodan reviews the final presentation, generate final-presentation.html in the course builder, commit it to the repository root, and submit the repository URL together with the presentation link or HTML file on the Learning Platform.
