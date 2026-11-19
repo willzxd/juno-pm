@@ -2,6 +2,10 @@
 
 _Module 3 · AI PRD. Built from the Lab 1 Harness Sketch in the AI PRD Builder, then clarified for review._
 
+## Project scope
+
+This course project uses the fictional RocketShip scenario. The prototype is a mockup; the tools, runtime controls and performance limits below specify a possible implementation. The Module 3 deliverable is this six-surface PRD. Production deployment and measured runtime or business results are outside this coursework artifact. Course context documents and the prototype's separately authored synthetic notes are distinct mock source sets.
+
 ## Problem & user
 
 RocketShip PMs receive product signals across interviews, monitoring, engineering, and planning documents. Before deciding what to investigate, they need a short brief that separates observations from possible explanations, shows the source for each claim, and names missing evidence. Juno prepares that first synthesis as a tool-using copilot. The PM decides priority, scope, delivery commitments, and external communication.
@@ -39,7 +43,7 @@ For each brief, Juno receives the PM's question and reads only sources that PM m
 
 **How fresh must it be**
 
-Fetch the latest authorized version and record its source ID, event date, and last-updated time at the start of each run. Keep historical user reports in their original time frame. For claims about current engineering capacity, roadmap, or deal status, require a source updated within seven days; otherwise say that current status is unconfirmed. If a source cannot be reached, name the gap and do not silently use a cached copy. Use the latest approved strategy version and flag a missing version date.
+Fetch the latest authorized version and record its source ID, event date, and last-updated time at the start of each run. Keep historical user reports in their original time frame. For claims about current engineering capacity, roadmap, or deal status, require a source updated within seven days; otherwise say that current status is unconfirmed. If a source cannot be reached, name the gap and do not silently use a cached copy. Use the latest approved strategy version and flag a missing version date. For a classroom scenario, assess freshness against its explicitly stated as-of date; never redate a historical fixture to make it appear current.
 
 ## 02 Tools · System Capabilities
 
@@ -66,7 +70,7 @@ Juno is a tool-using copilot capped at five model/tool turns per brief: search, 
 
 **Latency and cost target**
 
-Initial pilot targets: p95 end-to-end time at or below 20 seconds and model-plus-tool cost at or below $0.15 per brief. Set hard caps of 30 seconds or $0.20 for one request; when a cap is reached, stop and return the partial result with the reason. Measure these targets in a pilot before treating them as achieved.
+Proposed implementation targets: p95 end-to-end time at or below 20 seconds and model-plus-tool cost at or below $0.15 per brief. Set hard caps of 30 seconds or $0.20 for one request; when a cap is reached, stop and return the partial result with the reason. If the design is implemented, measure these targets before claiming they are achieved. The mockup submission presents them as requirements.
 
 ## 04 Memory · Data Requirements
 
@@ -97,7 +101,7 @@ READ is automatic only inside the PM’s existing access and the chosen question
 
 **The check before output ships**
 
-Before display, check every factual claim against an authorized, retrievable source passage and show its source ID and date. Require 100% of factual findings to have support; label hypotheses and proposed actions explicitly. Check the skill-file format: Scope and coverage, no more than three findings in the required five-column table, PM handoff, and at most 500 words. Reject invented prevalence, root cause, priority, owner, or date. In the export case, do not turn the user’s CSV failure and the over-50-MB errors into one confirmed cause. A separate claim-to-passage review flags weak support or contradictions. Module 5 will test this gate on a golden set; these are requirements, not achieved results.
+Before display, check every factual claim against an authorized, retrievable source passage and show its source ID and date. Require 100% of factual findings to have support; label hypotheses and proposed actions explicitly. Check the skill-file format: Scope and coverage, no more than three findings in the required five-column table, PM handoff, and at most 500 words. Reject invented prevalence, root cause, priority, owner, or date. In the export case, do not turn the user’s CSV failure and the over-50-MB errors into one confirmed cause. A separate claim-to-passage review flags weak support or contradictions. The completed [Module 5 rubric](../05-evals/human-rubric.md) defines the scoring criteria and thresholds for this gate. These are specified checks, not measured results.
 
 **Failure behaviour**
 
@@ -105,9 +109,8 @@ If a source is missing, stale for a current-status claim, or does not support a 
 
 ## Eval plan
 
-Module 5 will define a golden set, pass thresholds for citation and claim support, and a regression cadence for the verification gate above. Module 6 can assess whether the workflow improves PM outcomes. The targets in this PRD are proposed requirements, not measured results.
+Use the [Module 5 human evaluation rubric](../05-evals/human-rubric.md) for scoring anchors, calibration, pass thresholds, and the proposed weekly 10-random plus 10-targeted review. Course or synthetic source packets can illustrate how the rubric applies; label any example scores as mock evaluations. The weekly operating cadence and regression checks describe a future implementation. Module 6 adds the same workflow's metrics plan, including an estimated baseline, target, review date and stop line. Executing a live pilot is separate from writing these coursework artifacts.
 
 ## Out of scope
 
 No direct reporting-database query; no ticket, roadmap, or CRM write; no model-initiated send or publication; and no automatic assignment of priority, owner, or delivery date. These are explicit product boundaries.
-
