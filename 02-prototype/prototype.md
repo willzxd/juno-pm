@@ -44,16 +44,16 @@ I checked the prototype against the committed [Module 1 skill file](../01-prompt
 
 ## Step 5 — Stranger-openable prototype link
 
-[**Open the live Juno insight brief**](https://willzxd.github.io/juno-pm/02-prototype/). The prototype is also available as [source code in this repository](./index.html). It uses only embedded synthetic notes, so a reviewer needs no login or setup.
+[**Open the hosted Juno insight-brief prototype**](https://willzxd.github.io/juno-pm/02-prototype/). The prototype is also available as [source code in this repository](./index.html). It uses only embedded synthetic notes, so a reviewer needs no login or setup.
 
 ## What it demonstrates
 
-The single flow is **read a sourced brief → inspect a supporting note → take an unresolved question to the PM**. The prototype tests whether the first synthesis is understandable and traceable; it does not test live ingestion or the accuracy of AI-generated analysis.
+The single flow is **read a sourced brief → inspect a supporting note → take an unresolved question to the PM**. The prototype is designed to test whether the first synthesis is understandable and traceable. Its static screen demonstrates the interaction; it does not establish that the cold-read assumption has passed or measure live AI accuracy.
 
 ## Debrief
 
 - **What worked (self-review):** Separate observations, visible coverage gaps, source references, and a concise PM handoff make the screen readable. The Copy Markdown action worked in the local browser check.
 - **What broke / felt like a toy:** The three notes are static and synthetic. Source highlighting is a UI interaction, not a connection to source systems. No peer cold-read result has been collected yet.
-- **What I'd change next pass:** Run the three-task cold read with a partner, record the actual confusion points, then revise the evidence labels and handoff wording. Next, test the same format with a permissioned real-source bundle and review citation accuracy before any product decision.
+- **What I'd change next pass:** Run the three-task cold read with a partner, record the actual confusion points, then revise the evidence labels and handoff wording. A later implementation could test the same format with authorized source data; that is outside this mockup deliverable.
 
-**Show and Swap feedback:** Pending a real partner review; no feedback is attributed to a partner here.
+**Show and Swap feedback:** Not recorded. The course's Module 2 Show and Swap exercise asks for another person's cold read, so the debrief above is explicitly self-review. No partner feedback is invented. This classroom feedback is separate from a production pilot or customer-impact study.
